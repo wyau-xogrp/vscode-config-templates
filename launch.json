@@ -70,11 +70,11 @@
       "program": "${workspaceRoot}/bin/cucumber"
     },
     {
-      "name": "RSpec (Temp)",
+      "name": "RSpec",
       "type": "Ruby",
       "request": "launch",
       "cwd": "${workspaceRoot}",
-      "program": "${env:GEM_HOME}/bin/rspec",
+      "program": "/Users/wyau/.rvm/gems/ruby-2.4.1/bin/rspec",
       "args": [],
       "env": {
         "PATH": "/Users/wyau/.rvm/gems/ruby-2.4.1/bin:/Users/wyau/.rvm/gems/ruby-2.4.1@global/bin:/Users/wyau/.rvm/rubies/ruby-2.4.1/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/wyau/.rvm/bin:/Users/wyau/.rvm/bin",
@@ -87,7 +87,7 @@
       }
     },
     {
-      "name": "Rails Server (Temp)",
+      "name": "Rails Server",
       "type": "Ruby",
       "request": "launch",
       "cwd": "${workspaceRoot}",
@@ -95,7 +95,6 @@
       "args": [
         "server"
       ],
-      "pathToRDebugIDE": "${env:GEM_HOME}/gems/ruby-debug-ide-0.6.0/bin/rdebug-ide",
       "env": {
         "PATH": "/Users/wyau/.rvm/gems/ruby-2.4.1/bin:/Users/wyau/.rvm/gems/ruby-2.4.1@global/bin:/Users/wyau/.rvm/rubies/ruby-2.4.1/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/wyau/.rvm/bin:/Users/wyau/.rvm/bin",
         "rvm_prefix": "~",
