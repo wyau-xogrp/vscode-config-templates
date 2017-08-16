@@ -1,0 +1,110 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Local File",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/main.rb"
+    },
+    {
+      "name": "Listen for rdebug-ide",
+      "type": "Ruby",
+      "request": "attach",
+      "cwd": "${workspaceRoot}",
+      "remoteHost": "127.0.0.1",
+      "remotePort": "1234",
+      "remoteWorkspaceRoot": "${workspaceRoot}"
+    },
+    {
+      "name": "Rails server",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/rails",
+      "args": [
+        "server"
+      ]
+    },
+    {
+      "name": "RSpec - all",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/rspec",
+      "args": [
+        "-I",
+        "${workspaceRoot}"
+      ],
+      "pathToRDebugIDE": "/Users/wyau/.rvm/gems/ruby-2.4.1/gems/ruby-debug-ide-0.6.0/bin/rdebug-ide",
+      "env": {
+        "PATH": "/Users/wyau/.rvm/gems/ruby-2.4.1/bin:/Users/wyau/.rvm/gems/ruby-2.4.1@global/bin:/Users/wyau/.rvm/rubies/ruby-2.4.1/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/wyau/.rvm/bin:/Users/wyau/.rvm/bin",
+        "rvm_prefix": "~",
+        "rvm_path": "~/.rvm",
+        "rvm_bin_path": "/Users/wyau/.rvm/bin",
+        "GEM_HOME": "/Users/wyau/.rvm/gems/ruby-2.4.1",
+        "GEM_PATH": "/Users/wyau/.rvm/gems/ruby-2.4.1:/Users/wyau/.rvm/gems/ruby-2.4.1@global",
+        "MY_RUBY_HOME": "/Users/wyau/.rvm/rubies/ruby-2.4.1",
+        "IRBRC": "/Users/wyau/.rvm/rubies/ruby-2.4.1/.irbrc",
+        "RUBY_VERSION": "ruby-2.4.1"
+      }
+    },
+    {
+      "name": "RSpec - active spec file only",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/rspec",
+      "args": [
+        "-I",
+        "${workspaceRoot}",
+        "${file}"
+      ]
+    },
+    {
+      "name": "Cucumber",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/cucumber"
+    },
+    {
+      "name": "RSpec (Temp)",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${env:GEM_HOME}/bin/rspec",
+      "args": [],
+      "env": {
+        "PATH": "/Users/wyau/.rvm/gems/ruby-2.4.1/bin:/Users/wyau/.rvm/gems/ruby-2.4.1@global/bin:/Users/wyau/.rvm/rubies/ruby-2.4.1/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/wyau/.rvm/bin:/Users/wyau/.rvm/bin",
+        "rvm_prefix": "~",
+        "rvm_path": "~/.rvm",
+        "rvm_bin_path": "~/.rvm/bin",
+        "GEM_HOME": "~/.rvm/gems/ruby-2.4.1",
+        "GEM_PATH": "/Users/wyau/.rvm/gems/ruby-2.4.1:/Users/wyau/.rvm/gems/ruby-2.4.1@global",
+        "RUBY_VERSION": "ruby-2.4.1"
+      }
+    },
+    {
+      "name": "Rails Server (Temp)",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/rails",
+      "args": [
+        "server"
+      ],
+      "pathToRDebugIDE": "${env:GEM_HOME}/gems/ruby-debug-ide-0.6.0/bin/rdebug-ide",
+      "env": {
+        "PATH": "/Users/wyau/.rvm/gems/ruby-2.4.1/bin:/Users/wyau/.rvm/gems/ruby-2.4.1@global/bin:/Users/wyau/.rvm/rubies/ruby-2.4.1/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/wyau/.rvm/bin:/Users/wyau/.rvm/bin",
+        "rvm_prefix": "~",
+        "rvm_path": "~/.rvm",
+        "rvm_bin_path": "~/.rvm/bin",
+        "GEM_HOME": "~/.rvm/gems/ruby-2.4.1",
+        "GEM_PATH": "/Users/wyau/.rvm/gems/ruby-2.4.1:/Users/wyau/.rvm/gems/ruby-2.4.1@global",
+        "RUBY_VERSION": "ruby-2.4.1"
+      }
+    }
+  ]
+}
